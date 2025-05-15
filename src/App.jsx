@@ -2,10 +2,12 @@ import { useState, createContext } from 'react'
 import './App.css'
 import { Login } from './Components/Login';
 
-export const Context = createContext('');
+export const Context = createContext();
 
-function App() {
-  const [ provider, setProvider ] = useState('');
+export function App() {
+  const [ provider, setProvider ] = useState('test');
+
+  
 
   return (
     <>
@@ -15,5 +17,3 @@ function App() {
     </>
   )
 }
-
-export default { App }
